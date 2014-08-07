@@ -1,0 +1,16 @@
+#prefsLeftPane {
+	position: absolute;
+	left: 5; width: 150;
+	top: 5; bottom: 5;
+	border-style:inset;
+	overflow: auto;
+}
+#prefsLeftPane li {
+	list-style-type: square;
+}
+
+#prefsMainPane {
+	position: absolute;
+	left: 165; right: 5;
+	top: 5; bottom: 5;
+}
