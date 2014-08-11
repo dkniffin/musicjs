@@ -19,7 +19,6 @@ a.active {
 	text-indent: -5;
 	margin: 5;
 }
-
 #prefsMainPane {
 	position: absolute;
 	left: 165; right: 5;
@@ -31,4 +30,20 @@ a.active {
 	left: 5; right: 5;
 	text-align: right;
 	border-top: 2px dotted black;
+}
+
+#prefsMainPane h1 {
+	font-size: 1em;
+}
+
+/* Library Preferences */
+#prefsMainPane.section_library #setting_music_folders {
+	width: 400; float: left;
+	height: 100;
+}
+#prefsMainPane.section_library button {
+	width: 70; margin: 5;
+}
+#prefsMainPane.section_library #fileDialog {
+	display: none;
 }
