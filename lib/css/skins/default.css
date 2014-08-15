@@ -47,3 +47,16 @@ a.active {
 #prefsMainPane.section_library #fileDialog {
 	display: none;
 }
+
+/* Main */
+#songlist {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+#songlist .slick-viewport {
+	height: auto !important;
+}
