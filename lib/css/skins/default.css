@@ -1,3 +1,4 @@
+html, body {margin: 0;}
 a {
 	cursor: hand;
 }
@@ -5,46 +6,44 @@ a.active {
 	font-weight: bold;
 }
 
+
+.ui-tabs-vertical { width: 100px; }
+.ui-tabs-vertical .ui-tabs-nav { padding: .2em .1em .2em .2em; float: left; width: 8em; height: 100%; margin-left: 5; margin-right: 5; font-size: 15px;}
+.ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; margin: 0 -1px .2em 0; height: 2em;}
+.ui-tabs-vertical .ui-tabs-nav li a { display: block; }
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; margin-bottom: 3px; background-color: black;}
+.ui-tabs-vertical .ui-tabs-panel { padding: 0; }
+
+
 /* Preferences */
-#prefsLeftPane {
-	position: absolute;
-	left: 5; width: 150;
-	top: 5; bottom: 37;
-	border-style:inset;
-	overflow: auto;
+
+#prefsTopPane {
+	height: calc(100% - 40px);
+	width: 100%;
+	padding: 0; border: 0;
+	margin-bottom: 10;
 }
-#prefsLeftPane ul {
-	list-style-type: square;
-	padding-left: 25;
-	text-indent: -5;
-	margin: 5;
-}
-#prefsMainPane {
-	position: absolute;
-	left: 165; right: 5;
-	top: 5; bottom: 37;
-}
+
 #prefsBottomPane {
-	position: absolute;
 	bottom: 0; height: 32;
-	left: 5; right: 5;
+	width: 100%;
 	text-align: right;
 	border-top: 2px dotted black;
 }
 
-#prefsMainPane h1 {
+#prefsTopPane h1 {
 	font-size: 1em;
 }
 
 /* Library Preferences */
-#prefsMainPane.section_library #setting_music_folders {
+#prefsTopPane #library #setting_music_folders {
 	width: 400; float: left;
 	height: 100;
 }
-#prefsMainPane.section_library button {
-	width: 70; margin: 5;
+#prefsTopPane #library button {
+	width: 85; margin: 5;
 }
-#prefsMainPane.section_library #fileDialog {
+#prefsTopPane #library #fileDialog {
 	display: none;
 }
 

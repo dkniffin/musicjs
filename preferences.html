@@ -2,16 +2,42 @@
 	<head>
 		<script src='lib/includes.js'></script>
 		<script src='lib/js/preferences.js'></script>
+		<style>
+			body {overflow: hidden;}
+		</style>
 	</head>
 	<body>
-		<div id='prefsLeftPane'>
+		<div id='prefsTopPane'>
 			<ul>
-				<li><a id='general_link' class='sectionLink'>General</a></li>
-				<li><a id='skin_link' class='sectionLink'>Skin</a></li>
-				<li><a id='library_link' class='sectionLink'>Library</a></li>
+				<li><a href='#general'>General</a></li>
+				<li><a href='#skin'>Skin</a></li>
+				<li><a href='#library'>Library</a></li>
 			</ul>
+			<div id='general'>
+				<h1>General</h1>
+			</div>
+			<div id='skin'>
+				<h1>Skin</h1>
+
+				<!-- TODO: Add skin directory setting -->
+				<label for="setting_skin">Skin:</label><input id='setting_skin' type="text" />
+			</div>
+			<div id='library'>
+				<h1>Library</h1>
+
+				<label for='setting_music_folders'>Music Folders</label>
+				<br />
+				<select multiple id='setting_music_folders' class='allValues'>
+				</select>
+
+				<div id='music_folder_buttons'>
+					<input id='fileDialog' type='file' nwdirectory />
+					<button id='add_music_folder'>Add</button>
+					<br />
+					<button id='remove_music_folder'>Remove</button>
+				</div>
+			</div>
 		</div>
-		<div id='prefsMainPane'></div>
 		<div id='prefsBottomPane'>
 			<button id='cancelBtn'>Cancel</button>
 			<button id='saveBtn'>Save</button>
