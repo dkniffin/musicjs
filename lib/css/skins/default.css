@@ -75,5 +75,7 @@ a.active {
 }
 #player #controls #playPosition {
 	height: 3;
-	background-color: black;
+}
+#player #controls #playPosition .ui-slider-handle {
+	display: none;
 }
